@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderCancelViewController">
+            <connections>
+                <outlet property="tableView" destination="hRi-gc-nxF" id="RlV-GT-MW3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yU-ys-rWN">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.99607843137254903" green="0.58823529411764708" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="h34-W1-m99"/>
+                    </constraints>
+                    <state key="normal" title="提交申请">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelOrder:" destination="-1" eventType="touchUpInside" id="IUI-AB-f9z"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hRi-gc-nxF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="brh-Lu-AXq"/>
+                        <outlet property="delegate" destination="-1" id="7yT-3I-ZB9"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="8yU-ys-rWN" secondAttribute="bottom" id="1tr-eO-lSu"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="8yU-ys-rWN" secondAttribute="trailing" id="Rg5-lu-Ksw"/>
+                <constraint firstItem="hRi-gc-nxF" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="eVE-sn-TkM"/>
+                <constraint firstItem="8yU-ys-rWN" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="par-4x-Xvb"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="hRi-gc-nxF" secondAttribute="trailing" id="pb4-rR-oXx"/>
+                <constraint firstItem="hRi-gc-nxF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tIH-26-z15"/>
+                <constraint firstItem="8yU-ys-rWN" firstAttribute="top" secondItem="hRi-gc-nxF" secondAttribute="bottom" id="yll-UU-oQz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-33" y="-231"/>
+        </view>
+    </objects>
+</document>

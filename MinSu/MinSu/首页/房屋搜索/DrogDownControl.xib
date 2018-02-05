@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DrogDownControl">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="129"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6E-Sc-K2f">
+                    <rect key="frame" x="154" y="56" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowdown" translatesAutoresizingMaskIntoConstraints="NO" id="Oki-9F-oUQ">
+                    <rect key="frame" x="195.5" y="61.5" width="11" height="6"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="u6E-Sc-K2f" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-9" id="EQE-6i-Ubw"/>
+                <constraint firstItem="Oki-9F-oUQ" firstAttribute="leading" secondItem="u6E-Sc-K2f" secondAttribute="trailing" constant="6" id="dEa-uU-iKY"/>
+                <constraint firstItem="u6E-Sc-K2f" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dbi-0h-Lfr"/>
+                <constraint firstItem="Oki-9F-oUQ" firstAttribute="centerY" secondItem="u6E-Sc-K2f" secondAttribute="centerY" id="i9m-u9-pTW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageView" destination="Oki-9F-oUQ" id="gnZ-78-MDZ"/>
+                <outlet property="titleLabel" destination="u6E-Sc-K2f" id="mYm-Ex-wp2"/>
+            </connections>
+            <point key="canvasLocation" x="-173.5" y="-210.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowdown" width="11" height="6"/>
+    </resources>
+</document>

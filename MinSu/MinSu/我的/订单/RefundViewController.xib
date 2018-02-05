@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RefundViewController">
+            <connections>
+                <outlet property="tableView" destination="aE8-3H-iBp" id="qbv-fu-O53"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbW-WK-odC">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.99607843137254903" green="0.58823529411764708" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="uRm-gp-U98"/>
+                    </constraints>
+                    <state key="normal" title="提交申请">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="applyTuikuan:" destination="-1" eventType="touchUpInside" id="WYx-YQ-z4s"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="aE8-3H-iBp">
+                    <rect key="frame" x="0.0" y="20" width="375" height="597"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3Wf-Q4-iUW"/>
+                        <outlet property="delegate" destination="-1" id="XdB-G0-Us9"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IbW-WK-odC" firstAttribute="top" secondItem="aE8-3H-iBp" secondAttribute="bottom" id="1dF-Gy-Rnc"/>
+                <constraint firstItem="IbW-WK-odC" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="NMf-Lt-Llx"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="IbW-WK-odC" secondAttribute="bottom" id="SfS-NZ-Rpb"/>
+                <constraint firstItem="aE8-3H-iBp" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="a0Z-vr-ZMG"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="aE8-3H-iBp" secondAttribute="trailing" id="aHB-TM-J8K"/>
+                <constraint firstItem="aE8-3H-iBp" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="cDl-ah-N6q"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="IbW-WK-odC" secondAttribute="trailing" id="rFF-HY-q00"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-69" y="55"/>
+        </view>
+    </objects>
+</document>

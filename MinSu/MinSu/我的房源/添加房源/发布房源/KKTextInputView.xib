@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KKTextInputView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXf-E2-7VP">
+                    <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RD2-r7-mxl">
+                            <rect key="frame" x="15" y="15" width="299" height="170"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                            <connections>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="GUU-ny-zC5"/>
+                            </connections>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jm7-HB-Pol">
+                            <rect key="frame" x="329" y="15" width="31" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" red="0.99607843139999996" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="ensure:" destination="iN0-l3-epB" eventType="touchUpInside" id="cRV-h8-4Oc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="RD2-r7-mxl" firstAttribute="top" secondItem="gXf-E2-7VP" secondAttribute="top" constant="15" id="NoT-oq-tZV"/>
+                        <constraint firstItem="RD2-r7-mxl" firstAttribute="leading" secondItem="gXf-E2-7VP" secondAttribute="leading" constant="15" id="fBl-SR-OoH"/>
+                        <constraint firstAttribute="trailing" secondItem="Jm7-HB-Pol" secondAttribute="trailing" constant="15" id="fxj-7o-JmY"/>
+                        <constraint firstItem="Jm7-HB-Pol" firstAttribute="leading" secondItem="RD2-r7-mxl" secondAttribute="trailing" constant="15" id="hNm-Fg-hO0"/>
+                        <constraint firstAttribute="bottom" secondItem="RD2-r7-mxl" secondAttribute="bottom" constant="15" id="jgC-dC-hLR"/>
+                        <constraint firstAttribute="height" constant="200" id="x9D-UG-k1A"/>
+                        <constraint firstItem="Jm7-HB-Pol" firstAttribute="top" secondItem="gXf-E2-7VP" secondAttribute="top" constant="15" id="yDT-Jv-W8W"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gXf-E2-7VP" secondAttribute="trailing" id="SQX-W8-pGK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gXf-E2-7VP" secondAttribute="bottom" id="UGe-7e-1Ru"/>
+                <constraint firstItem="gXf-E2-7VP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sYo-VI-98U"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bottomCons" destination="UGe-7e-1Ru" id="2hj-ha-Lif"/>
+                <outlet property="textView" destination="RD2-r7-mxl" id="5tm-4k-U3g"/>
+            </connections>
+            <point key="canvasLocation" x="-367.5" y="64.5"/>
+        </view>
+    </objects>
+</document>

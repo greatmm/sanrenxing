@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatRecordTableViewCell" rowHeight="181" id="KGk-i7-Jjw" customClass="ChatRecordTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="180.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_icon" translatesAutoresizingMaskIntoConstraints="NO" id="FcS-ql-41D">
+                        <rect key="frame" x="15" y="70.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="6ko-fU-EdN"/>
+                            <constraint firstAttribute="width" constant="40" id="ePc-sA-cWU"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美丽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJB-2Y-yxg">
+                        <rect key="frame" x="70" y="81.5" width="31" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:53AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCV-M8-VaH">
+                        <rect key="frame" x="313.5" y="83.5" width="48.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gCV-M8-VaH" secondAttribute="trailing" constant="15" id="0rJ-Bt-l1l"/>
+                    <constraint firstItem="FcS-ql-41D" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9jd-bC-kJL"/>
+                    <constraint firstItem="rJB-2Y-yxg" firstAttribute="leading" secondItem="FcS-ql-41D" secondAttribute="trailing" constant="15" id="EbR-4h-z8d"/>
+                    <constraint firstItem="rJB-2Y-yxg" firstAttribute="centerY" secondItem="FcS-ql-41D" secondAttribute="centerY" id="GvH-ha-Ibu"/>
+                    <constraint firstItem="gCV-M8-VaH" firstAttribute="centerY" secondItem="rJB-2Y-yxg" secondAttribute="centerY" id="rgJ-M8-ZIe"/>
+                    <constraint firstItem="FcS-ql-41D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ynf-8m-luU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="headerImageView" destination="FcS-ql-41D" id="88Q-nW-Fyy"/>
+                <outlet property="nickNameLabel" destination="rJB-2Y-yxg" id="i4f-1n-Ils"/>
+                <outlet property="timeLabel" destination="gCV-M8-VaH" id="PRf-r4-Ph3"/>
+            </connections>
+            <point key="canvasLocation" x="-50" y="42"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="default_icon" width="118" height="118"/>
+    </resources>
+</document>

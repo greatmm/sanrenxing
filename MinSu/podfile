@@ -1,0 +1,27 @@
+platform :ios, '9.0'
+
+target ‘MinSu’ do
+
+pod 'MJRefresh'
+
+pod 'MJExtension'
+
+pod 'AFNetworking'
+
+pod 'SDCycleScrollView'
+
+pod 'SDWebImage'
+ 
+pod 'SVProgressHUD'
+
+pod 'RongCloudIM/IMLib', '~> 2.8.3'
+
+pod 'RongCloudIM/IMKit', '~> 2.8.3' 
+
+pod ‘UMengUShare/Social/WeChat'
+
+pod ‘UMengUShare/Social/QQ'
+
+pod ‘UMengUShare/Social/Sina' 
+
+end
